@@ -1,0 +1,75 @@
+body {
+    background: transparent;
+}
+
+#clock-container {
+    height: 40vw;
+    width: 40vw;
+    min-width: 400px;
+    min-height: 400px;
+    margin: auto;
+    margin-top: 8vh;
+    background: url("https://i.pinimg.com/originals/c1/d5/70/c1d5703f39eeddbdf4757404d01c713d.png");
+    border-radius: 50%;
+    border: 1vw solid;
+    background-size: 100%;
+    box-shadow: 0px 20px 50px -30px gray, inset 0px -10px 50px -25px gray;
+    margin: 20px;
+}
+
+
+#second-hand,
+#hour-hand,
+#minute-hand,
+#center-pin {
+    box-shadow: -15px 15px 50px -10px gray;
+    position: relative;
+    border-radius: 20vw;
+    transform-origin: bottom;
+    transition-duration: 1000ms;
+    transition-timing-function: linear;
+}
+
+#second-hand {
+    height: 40%;
+    width: 1%;
+    top: 10%;
+    left: 49.5%;
+    background-color: red;
+}
+
+#minute-hand {
+    height: 35%;
+    width: 1.5%;
+    top: -25%;
+    left: 49.25%;
+    background-color: gray;
+}
+
+#hour-hand {
+    height: 30%;
+    width: 2%;
+    top: -55%;
+    left: 49%;
+    background-color: black;
+}
+
+#center-pin {
+    height: 10%;
+    width: 10%;
+    background-color: rgba(255, 255, 255);
+    border: none;
+    font-family: Arial;
+    font-size: 1.2em;
+    color: black;
+    top: -60.8%;
+    left: 45%;
+    border: 0.2vw solid lightgray;
+    padding: 0;
+}
+
+/* @media (max-width: 600px) {
+	#center-pin {
+		font-size: 10px;
+	}
+} */
