@@ -5,6 +5,12 @@ app.whenReady().then(() => {
     webPreferences: {
       nodeIntegration: true,
     },
+    width: 450,
+    minWidth: 450,
+    maxWidth: 450,
+    minHeight: 550,
+    height: 550,
+    fullscreenable: false,
   });
 
   myWindow.loadFile("index.html");
